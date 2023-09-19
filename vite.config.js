@@ -5,6 +5,10 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  server: {
+        host: true,
+        port: 8080
+    },
   build: {
     rollupOptions: {
       input: glob.sync('./src/*.html'),
