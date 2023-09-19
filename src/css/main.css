@@ -1,0 +1,44 @@
+body {
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.section-title {
+  color: #121417;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+}
+.section-title-highlight {
+  position: relative;
+}
+
+.section-title-highlight::before {
+  content: '';
+  position: absolute;
+  border-radius: 8px;
+  width: 100%;
+  height: 12px;
+  background-color: #bee8cc;
+  bottom: 0px;
+  left: 0px;
+  bottom: 4px;
+  z-index: -1;
+}
+
+.section-description {
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  line-height: 1.67;
+}
