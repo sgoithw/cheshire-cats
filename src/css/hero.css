@@ -38,7 +38,8 @@
 }
 
 .hero-container {
-  min-height: 600px;
+  position: relative;
+  min-height: 629px;
   margin: 0 20px;
   padding: 20px;
   padding-top: 425px;
@@ -97,4 +98,43 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url(../images/hero/hero-desc@2x.png);
   }
+}
+
+.hero-title {
+  width: 100%;
+  margin-bottom: 40px;
+
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+
+.hero-btn {
+  display: block;
+  width: 100%;
+  height: 52px;
+  background-color: #4dc274;
+  border-radius: 12px;
+  padding: 14px 87px;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 72px;
+}
+
+.scroll-btn {
+  display: flex;
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
 }
