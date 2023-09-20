@@ -59,12 +59,23 @@ body {
   width: 100%;
   height: 12px;
   background-color: #bee8cc;
-  bottom: 0px;
   left: 0px;
   bottom: 4px;
   z-index: -1;
 }
+@media only screen and (min-width: 768px) {
+  .section-title-highlight::before {
+    height: 16px;
+    bottom: 2px;
+  }
+}
 
+@media only screen and (min-width: 1280px) {
+  .section-title-highlight::before {
+    height: 20px;
+    bottom: 0px;
+  }
+}
 .section-description {
   color: rgba(18, 20, 23, 0.5);
   text-align: center;
