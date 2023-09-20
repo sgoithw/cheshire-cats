@@ -7,7 +7,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
   .our-lessons {
     margin-bottom: 150px;
   }
@@ -35,7 +35,7 @@
   flex-direction: column;
   border-radius: 16px;
   border: 1px solid #4dc274;
-  max-width: 336px;
+  max-width: 335px;
   height: 400px;
   padding: 40px 20px;
 }
@@ -64,6 +64,11 @@
   letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
+.our-lessons-section-dexcription {
+  max-width: 665px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .our-lessons-price-list-item:nth-child(2n) .our-lessons-price-item-title {
   color: #fff;
 }
@@ -79,6 +84,7 @@
 @media only screen and (min-width: 768px) {
   .our-lessons-price-item-price {
     line-height: 1.38;
+    margin-bottom: 32px;
   }
 }
 
@@ -115,6 +121,7 @@
   width: 100%;
   color: #fff;
   font-size: 14px;
+  font-weight: 700;
   margin-top: auto;
   transition: background-color 0.3s ease-in-out;
 }

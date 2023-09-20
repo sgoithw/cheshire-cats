@@ -65,13 +65,6 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .section-title-highlight::before {
-    height: 16px;
-    bottom: 2px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .section-title-highlight::before {
     height: 20px;
     bottom: 0px;
   }
@@ -79,9 +72,7 @@ body {
 .section-description {
   color: rgba(18, 20, 23, 0.5);
   text-align: center;
-  font-family: Manrope;
   font-size: 14px;
-  line-height: 1.71;
   margin-bottom: 40px;
 }
 
