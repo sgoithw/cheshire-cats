@@ -146,7 +146,7 @@
 @media (min-width: 1157.98px) {
 }
 
-.scroll-btn {
+.hero-scroll-btn {
   display: flex;
   position: absolute;
   bottom: 14px;
@@ -162,4 +162,12 @@
 @media (min-width: 757.98px) {
 }
 @media (min-width: 1157.98px) {
+}
+
+.scroll-icon {
+  stroke: #4dc274;
+}
+
+.hero-accent {
+  color: #bee8cc;
 }
