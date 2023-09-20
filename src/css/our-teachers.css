@@ -1,0 +1,66 @@
+/*section teachers*/
+.teachers-section {
+    background-color: #fff;
+    width: 1280px;
+    height: 5955px;
+}
+.teachers-title {
+    color: #121417;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+}
+.teachers-text {
+    color: rgba(18, 20, 23, 0.50);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 72px;
+}
+
+.our-teachers-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    gap: 32px;
+}
+
+.teachers-foto-item {
+    display: flex;
+    height: 318px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.teacher-info-list {
+    padding: 16px 0;
+}
+.teacher-info-list .teachers-subtitle {
+    margin-bottom: 8px;
+}
+
+.teachers-subtitle {
+    color: #121417;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0.8;
+    letter-spacing: -0.4px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.tx-teachers {
+    color: rgba(18, 20, 23, 0.50);
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    width: 232px;
+    height: 123px;
+}
