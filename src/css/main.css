@@ -8,6 +8,30 @@ body {
   line-height: 1.71;
 }
 
+.container {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+/* Styles for desktop devices */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
 .section-title {
   color: #121417;
   text-align: center;
