@@ -111,6 +111,13 @@
   text-align: left;
 }
 
+@media (min-width: 757.98px) {
+  .hero-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
 .hero-btn {
   display: block;
   width: 100%;
@@ -126,6 +133,19 @@
   margin-bottom: 72px;
 }
 
+@media (min-width: 757.98px) {
+  .hero-btn {
+    display: flex;
+    padding: 16px 64px;
+    width: 306px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 1157.98px) {
+}
+
 .scroll-btn {
   display: flex;
   position: absolute;
@@ -137,4 +157,9 @@
   background-color: #fff;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 757.98px) {
+}
+@media (min-width: 1157.98px) {
 }
