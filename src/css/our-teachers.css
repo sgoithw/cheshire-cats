@@ -38,6 +38,13 @@
     align-items: center;
     gap: 32px;
 }
+
+@media screen and (min-width: 320px) {
+    .teachers-foto-item {
+        margin-top:40px;
+    }
+}
+
 .teacher-info-list {
     padding: 16px 0;
     gap: 16px;
