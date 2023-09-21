@@ -18,7 +18,7 @@
 .hero-container {
   position: relative;
   min-height: 629px;
-  margin: 0 20px;
+  margin: 0 auto;
   padding: 20px;
   padding-top: 425px;
 
@@ -45,7 +45,7 @@
     border-radius: 30px;
     padding-left: 32px;
     padding-top: 260px;
-    margin: 0 32px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url(../images/hero/hero-tab.png);
   }
@@ -63,7 +63,7 @@
   .hero-container {
     padding-left: 64px;
     padding-top: 164px;
-    margin: 0 64px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
       url(../images/hero/hero-desc.png);
   }
