@@ -1,76 +1,68 @@
 /*section teachers*/
-.teachers-title {
-    color: #121417;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.8px;
-    margin-bottom: 16px;
-}
-.teachers-text {
-    color: rgba(18, 20, 23, 0.50);
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.6;
-    margin-bottom: 72px;
-}
-
 .our-teachers-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    gap: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  gap: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .our-teachers-list {
-        row-gap: 64px;
-    }
+  .our-teachers-list {
+    gap: 32px;
+  }
 }
 
 .teachers-foto-item {
-    display: flex;
-    height: 318px;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
-
-@media screen and (min-width: 320px) {
-    .teachers-foto-item {
-        margin-top:40px;
-    }
+@media only screen and (min-width: 768px) {
+  .teachers-foto-item {
+    width: 272px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .teachers-foto-item {
+    width: 232px;
+  }
+}
+/* @media screen and (min-width: 320px) {
+} */
 
 .teacher-info-list {
-    padding: 16px 0;
-    gap: 16px;
+  gap: 16px;
 }
 .teacher-info-list .teachers-subtitle {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .teachers-subtitle {
-    color: #121417;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 0.8;
-    letter-spacing: -0.4px;
-    align-items: center;
-    text-transform: capitalize;
-    gap: 16px;
+  color: #121417;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: -0.4px;
+  align-items: center;
+  text-transform: capitalize;
+  gap: 16px;
 }
 
 .tx-teachers {
-    color: rgba(18, 20, 23, 0.50);
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    width: 232px;
-    height: 123px;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  /* width: 232px; */
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .tx-teachers {
+    font-size: 16px;
+  }
 }
