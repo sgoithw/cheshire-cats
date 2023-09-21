@@ -27,7 +27,11 @@
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 72px;
-    gap: 32px;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    row-gap: 64px;
 }
 
 .teachers-foto-item {
@@ -39,6 +43,7 @@
 }
 .teacher-info-list {
     padding: 16px 0;
+    gap: 16px;
 }
 .teacher-info-list .teachers-subtitle {
     margin-bottom: 8px;
@@ -53,6 +58,7 @@
     letter-spacing: -0.4px;
     align-items: center;
     text-transform: capitalize;
+    gap: 16px;
 }
 
 .tx-teachers {
