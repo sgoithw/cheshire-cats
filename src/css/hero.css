@@ -117,6 +117,14 @@
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 72px;
+  transition: background-color #4dc274 ease;
+  transition-delay: 200ms;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #38ae5f;
+  transition-delay: 0ms;
 }
 
 @media (min-width: 757.98px) {
@@ -128,8 +136,6 @@
     font-size: 18px;
     line-height: 28px;
   }
-}
-@media (min-width: 1157.98px) {
 }
 
 .hero-scroll-btn {
@@ -145,13 +151,22 @@
   justify-content: center;
 }
 
-@media (min-width: 757.98px) {
-}
-@media (min-width: 1157.98px) {
+.hero-scroll-btn:hover,
+.hero-scroll-btn:focus {
+  background-color: #4dc274;
+  transition: background-color #4dc274 ease;
+  transition-delay: 200ms;
 }
 
 .scroll-icon {
   stroke: #4dc274;
+}
+
+.scroll-icon:hover,
+.scroll-icon:focus {
+  stroke: #ffffff;
+  fill: #fff;
+  transition-delay: 0ms;
 }
 
 .hero-accent {
