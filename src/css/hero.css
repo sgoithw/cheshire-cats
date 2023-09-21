@@ -1,5 +1,6 @@
 .hero {
   padding-bottom: 80px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,6 +93,13 @@
   .hero-title {
     font-size: 60px;
     line-height: 70px;
+    max-width: 488px;
+  }
+}
+
+@media (min-width: 1157.98px) {
+  .hero-title {
+    max-width: 564px;
   }
 }
 
