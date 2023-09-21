@@ -1,0 +1,251 @@
+/* .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  } */
+
+.footer {
+  background-color: var(--color-black);
+}
+
+.footer-container {
+  text-align: start;
+  padding: 40px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 32px 32px 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    padding: 64px 128px 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-content-wrap {
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-white);
+  transition: transform var(--transition-dur-and-func);
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    margin-bottom: 32px;
+  }
+}
+
+.footer-logo-excellense {
+  color: var(--color-green);
+}
+
+/* -------- FOOTER CONTACTS -------- */
+.footer-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contacts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-contact-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-contacts-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: var(--color-white);
+  font-style: normal;
+}
+
+/* -------- FOOTER NAVIGATGION -------- */
+
+.footer-navigation {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-navigation {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-navigation {
+    margin-bottom: 64px;
+  }
+}
+
+.footer-navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-navigation-item {
+  position: relative;
+}
+
+.footer-navigation-link {
+  font-weight: 600;
+  line-height: 1.29;
+  color: var(--color-white);
+}
+
+.footer-navigation-link::after {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: var(--color-green);
+  opacity: 0;
+  transition: opacity var(--transition-dur-and-func);
+}
+
+.footer-navigation-link:hover::after {
+  opacity: 1;
+}
+
+/* -------- FOOTER SOC MEDIA -------- */
+
+.footer-icon-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.footer-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.footer-icon-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-dev-titans-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  opacity: 0.8;
+  fill: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  border: 1px solid rgba(77, 194, 116, 0.1);
+  transition: border var(--transition-dur-and-func);
+}
+
+.footer-icon-link:hover .footer-icon,
+.footer-icon-link:focus .footer-icon {
+  fill: var(--color-green);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.footer-container .footer-vector:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-text-wrapper {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-text-wrapper {
+    flex-direction: column;
+    text-align: start;
+    gap: 14px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-text-wrapper {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-text-wrapper {
+    margin-top: 23px;
+  }
+}
+
+.footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.018;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-text-wrap {
+  display: flex;
+  text-align: right;
+  gap: 18px;
+}
