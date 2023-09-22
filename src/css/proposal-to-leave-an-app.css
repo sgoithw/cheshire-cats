@@ -1,11 +1,9 @@
 .proposal {
 }
-.container {
+.proposal-container {
+  display: block;
   position: relative;
-  z-index: -2;
-
-  min-width: 320px;
-  width: 335px;
+  z-index: 1;
   padding: 40px 20px;
   margin: 0 auto;
   border-radius: 16px;
@@ -20,7 +18,7 @@
   }
 }
 /* Styles for desktop devices */
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .container {
     width: 1152px;
     height: 950px;
@@ -28,6 +26,20 @@
     padding: 64px 64px 142px 64px;
   }
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section-title {
   color: #fff;
   text-align: left;
@@ -48,7 +60,7 @@
     margin-bottom: 83px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .section-title {
     width: 776px;
     font-size: 60px;
@@ -78,7 +90,7 @@
     padding: 64px 32px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .proposal-card {
     width: 1024px;
     height: 471px;
@@ -178,7 +190,7 @@
     width: 437px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .proposal-item {
     width: 633px;
   }
@@ -254,7 +266,7 @@
     content: url(../images/proposal-books.jpg);
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .proposal-button::after {
     right: -746px;
   }
