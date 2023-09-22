@@ -1,70 +1,103 @@
-.laa-thumb {
+.laa-thumb-pic {
+    min-width: 492px;
+    border-radius: 30px 30px 0 0;
+    background-color: #4DC274;
+}
+
+.laa-hidden-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #4DC274;
+    min-width: 492px;
+    margin-right: 32px;
 }
 
-.laa-main-part-text {
+.laa-main-cont {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
-
-.laa-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: auto;
-}
-
-.laa-personal-form {
-    margin-bottom: 20px;
-    gap: 18px;
-    width: 100%;
-}
-
-.laa-form-field {
-    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .laa-input {
-    width: 100%;
-    border-radius: 12px;
-    border: 1px solid rgba(18, 20, 23, 0.10);
-    background-color: transparent;
+    padding: 16px 279px 16px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
     outline: transparent;
-    height: 50px;
+    border-radius: 12px;
+    border: 1px solid rgba(20, 23, 18, 0.1);
+}
+
+.laa-input:hover,
+.laa-input:focus {
+    border: 1px solid #4DC274;
+}
+
+.laa-input::placeholder {
+    color: #121417;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+}
+
+.laa-name-form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.laa-main-part-title {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.laa-main-part-prgf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    width: 452px;
+    height: 70px;
 }
 
 @media (min-width: 320px) and (max-width: 1280px) {
-    .laa-thumb {
+    .laa-hidden-container {
         display: none;
     }
 }
 
-.leave-an-aplication {
+.laa-main {
     margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
-    .leave-an-aplication {
+    .laa-main {
         margin-bottom: 100px;
     }
 
-    .laa-personal-form {
-        margin-bottom: 32px;
-    }
-
-    .laa-input {
-        height: 56px;
+    .laa-input::placeholder {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .leave-an-aplication {
+    .laa-main {
         margin-bottom: 150px;
     }
 }
@@ -75,39 +108,26 @@
     }
 }
 
-.laa-section {
-    margin-bottom: 14px;
+.laa-section-description {
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-    .laa-section {
-        margin-bottom: 16px;
+    .laa-section-description {
+        font-size: 18px;
+        line-height: 1.66;
+        max-width: 586px;
+        margin-bottom: 64px;
     }
-}
 
-.laa-section-description {
-    width: 335px;
-    color: rgba(18, 20, 23, 0.80);
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 40px;
-}
-
-.laa-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.laa-main-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 @media only screen and (min-width: 1280px) {
-    .laa-main-part {
-        flex-direction: row;
-        gap: 32px;
+    .laa-section-description {
+        max-width: 709px;
+        margin-bottom: 80px;
     }
 }
