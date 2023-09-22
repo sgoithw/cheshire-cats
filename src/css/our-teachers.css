@@ -1,4 +1,20 @@
 /*section teachers*/
+
+.teachers-section {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .teachers-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers-section {
+    margin-bottom: 150px;
+  }
+}
+
 .our-teachers-list {
   display: flex;
   justify-content: center;
