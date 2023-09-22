@@ -1,5 +1,18 @@
 .proposal {
+  margin-bottom: 80px;
 }
+@media only screen and (min-width: 768px) {
+  .proposal {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .proposal {
+    margin-bottom: 150px;
+  }
+}
+
 .proposal-container {
   position: relative;
   z-index: 1;
@@ -10,15 +23,15 @@
 }
 /* Styles for tablet devices */
 @media only screen and (min-width: 768px) {
-  .container {
+  .proposal-container {
     width: 704px;
     max-width: 736px;
-    padding: 64px 12px 92px;
+    padding: 64px 18px 92px 18px;
   }
 }
 /* Styles for desktop devices */
 @media only screen and (min-width: 1280px) {
-  .container {
+  .proposal-container {
     width: 1152px;
     height: 950px;
     max-width: 1158px;
@@ -42,7 +55,8 @@
 .proposal-section-title {
   color: #fff;
   text-align: left;
-
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: Manrope;
   font-size: 38px;
   font-style: normal;
@@ -54,6 +68,8 @@
 /* Styles for tablet devices */
 @media only screen and (min-width: 768px) {
   .proposal-section-title {
+    padding-left: 32px;
+    padding-right: 32px;
     font-size: 60px;
     margin-right: 83px;
     margin-bottom: 83px;
@@ -62,6 +78,7 @@
 @media only screen and (min-width: 1280px) {
   .proposal-section-title {
     width: 776px;
+    padding-left: 64px;
     font-size: 60px;
     margin-right: 312px;
     margin-bottom: 133px;
@@ -71,11 +88,12 @@
   color: #bee8cc;
 }
 .proposal-card {
+  position: relative;
   width: 295px;
   height: 408px;
-
+  margin: 0 auto;
   border-radius: 16px;
-  background: #ffffff;
+  background-color: #ffffff;
 
   padding: 40px 20px;
 }
@@ -92,12 +110,12 @@
   .proposal-card {
     width: 1024px;
     height: 471px;
-    position: relative;
     padding: 64px;
   }
 }
-.proposal-container .proposal-card::before,
-.proposal-container .proposal-card::after {
+
+.proposal-card::before,
+.proposal-card::after {
   position: absolute;
   z-index: -1;
 
@@ -110,16 +128,16 @@
   left: 0;
   bottom: 0;
 
-  transform: rotate(50deg);
-  transform: rotate(-9deg);
-}
-.proposal .proposal-card::before {
   transform: rotate(11deg);
-  background: #ffffff80;
-}
-.proposal .proposal-card::after {
   transform: rotate(-9deg);
-  background: #d4fde1;
+}
+.proposal-card::before {
+  transform: rotate(11deg);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.proposal-card::after {
+  transform: rotate(-9deg);
+  background-color: #d4fde1;
 }
 
 .proposal-card-title {
@@ -217,8 +235,6 @@
 @media only screen and (min-width: 768px) {
   .proposal-icon {
     fill: #ffffff;
-    width: 14px;
-    height: 9px;
   }
 }
 .proposal-button {
@@ -254,10 +270,8 @@
 @media only screen and (min-width: 768px) {
   .proposal-button::after {
     position: absolute;
-    bottom: 157px;
-    right: 0px;
-    width: 214px;
-    height: 263px;
+    bottom: 63px;
+    right: 0;
     content: url(../images/proposal-books-tab.jpg);
   }
 }
@@ -265,7 +279,7 @@
   .proposal-button::after {
     right: 0;
     bottom: 79px;
-    content: url(../images/proposal-books.jpg);
+    content: url(../images/proposal-books-tab.jpg);
   }
 }
 .proposal-link {
@@ -274,4 +288,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 1.7;
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-link {
+    font-size: 18px;
+  }
 }
