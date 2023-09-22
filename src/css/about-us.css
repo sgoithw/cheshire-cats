@@ -57,6 +57,7 @@
   gap: 20px;
   flex-wrap: wrap;
   max-width: 682px;
+  margin-bottom: 20px;
 }
 .about-us-list-item {
   display: flex;
@@ -122,6 +123,7 @@
     max-width: 704px;
     justify-content: center;
     gap: 32px;
+    margin-bottom: 32px;
   }
 
   .about-us-list-item {
