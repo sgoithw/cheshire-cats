@@ -9,8 +9,8 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
   
-  <script type="module" crossorigin src="/cheshire-cats/assets/index-d1314d61.js"></script>
-  <link rel="stylesheet" href="/cheshire-cats/assets/index-bc1b0a70.css">
+  <script type="module" crossorigin src="/cheshire-cats/assets/index-cb7cd5eb.js"></script>
+  <link rel="stylesheet" href="/cheshire-cats/assets/index-7032e578.css">
 </head>
 <body>
   <!--------- HEADER -------->
@@ -68,20 +68,6 @@
         </a>
       </li>
     </ul>
-
-    <!-- <button
-    class="menu-open js-open-menu"
-    type="button"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-    data-menu-open-btn
-  >
-    <svg class="menu-open-icon" width="32" height="22">
-      <use href="./images/icons.svg#icon-menu"></use>
-    </svg>
-  </button> -->
-
-
 
     <button class="menu-open js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu"
       data-menu-open-btn>
@@ -432,47 +418,53 @@
           ></textarea>
         </label>
 
-        <h3 class="laa-choose-title">Choose a teacher</h3>
+        <fieldset class="leave-radio-group">
+          <legend class="leave-radio-group-title">Choose a teacher</legend>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="maria"
+              id="radio-Maria"
+              checked
+            />
+            <label class="leave-radio-label" id="radio-Maria">Maria</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="artem"
+              id="radio-Artem"
+            />
+            <label class="leave-radio-label" id="radio-Artem">Artem</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="ilona"
+              id="radio-Ilona"
+            />
+            <label class="leave-radio-label" id="radio-Ilona">Artem</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="volodymyr"
+              id="radio-Ilona"
+            />
+            <label class="leave-radio-label" id="radio-Ilona">Volodymyr</label>
+          </div>
+        </fieldset>
 
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="marina"
-            checked
-          />
-          Maria
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="artem"
-          />
-          Artem
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="ilona"
-          />
-          Ilona
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="volodymyr"
-          />
-          Volodymyr
-        </label>
+        <button class="leave-btn-form" type="submit" id="submitButton">Send</button>
 
-        <button class="btn-form">Send</button>
         <p class="tx-laa">
           By clicking on “Send” button, you agree to our
           <span>Privacy Policy</span>, and allow Promodo to use this information
