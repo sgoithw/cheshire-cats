@@ -10,8 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
   
-  <script type="module" crossorigin src="/cheshire-cats/assets/index-a8324b77.js"></script>
-  <link rel="stylesheet" href="/cheshire-cats/assets/index-3a8e53f1.css">
+  <script type="module" crossorigin src="/cheshire-cats/assets/index-eddc563c.js"></script>
+  <link rel="stylesheet" href="/cheshire-cats/assets/index-663db03a.css">
 </head>
 
 <body>
@@ -158,6 +158,7 @@
     </div>
   </div>
 </header>
+
   <main>
     <section id="hero" class="hero">
   <div class="container hero-container">
@@ -214,7 +215,13 @@
         </li>
       </ol>
       <div class="about-us-container-image">
-        <img class="about-us-image" src="/cheshire-cats/assets/memoji-e7eea9c9.png" alt="finger-up girl's picture" />
+        <img
+          class="about-us-image"
+          srcset=".images/memoji.jpg 1x, ./images/memoji@2x.jpg 2x"
+          src="/cheshire-cats/assets/memoji-28dfffb0.jpg"
+          alt="finger-up girl's picture"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
@@ -358,98 +365,144 @@
     
     
   </main>
+  <!-------- FOOTER -------->
+<footer>
   <div class="footer" id="footer-anchor">
-  <div class="footer-container container">
-    <div class="footer-content-wrap">
-      <div class="footer-logo-adress-wrap">
-        <a class="footer-logo link" href="">
-          english<span class="footer-logo-excellense">excellence.</span>
-        </a>
-
-        <!-------- CONTACTS -------->
-        <address class="footer-contacts">
-          <ul class="footer-contacts-list list">
-            <li class="footer-contacts-item">
-              <p class="footer-contact-text">Phone number:</p>
-              <a class="footer-contacts-link link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+    <div class="footer-container container">
+      <div class="footer-content-wrap">
+        <div class="footer-logo-adress-wrap">
+          <a class="footer-logo link" href="">
+            english<span class="footer-logo-excellense">excellence.</span>
+          </a>
+          <!-------- CONTACTS -------->
+          <address class="footer-contacts">
+            <ul class="footer-contacts-list list">
+              <li class="footer-contacts-item">
+                <p class="footer-contact-text">Phone number:</p>
+                <a class="footer-contacts-link link" href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <p class="footer-contact-text">Address:</p>
+                <a
+                  class="footer-contacts-link link"
+                  href="https://www.google.com/maps/search/32a+M.+Bazhana+ave/@50.394519,30.6064191,17z/data=!3m1!4b1?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >32a M. Bazhana ave</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-------- NAVIGATGION -------->
+        <nav class="footer-navigation">
+          <ul class="footer-navigation-list list">
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link link" href="#english-about"
+                >About us</a
+              >
             </li>
-            <li class="footer-contacts-item">
-              <p class="footer-contact-text">Address:</p>
-              <a class="footer-contacts-link link"
-                href="https://www.google.com/maps/search/32a+M.+Bazhana+ave/@50.394519,30.6064191,17z/data=!3m1!4b1?entry=ttu"
-                target="_blank" rel="noopener noreferrer">32a M. Bazhana ave</a>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link link" href="#english-lessons"
+                >Our lessons</a
+              >
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link link" href="#english-teachers"
+                >Teachers</a
+              >
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link link" href="#english-reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="footer-navigation-item">
+              <a class="footer-navigation-link link" href="#english-application"
+                >Contact us</a
+              >
             </li>
           </ul>
-        </address>
+        </nav>
+        <!---------- SOCIALS --------->
+        <div class="footer-icon-wrapper">
+          <ul class="footer-icon-list">
+            <li class="footer-icon-item">
+              <a
+                class="footer-icon-link"
+                href="https://www.facebook.com/goITclub/"
+                target="_blank"
+                rel="noopener norefferer"
+              >
+                <svg
+                  class="footer-icon"
+                  aria-label="facebook icon"
+                  width="28"
+                  height="28"
+                >
+                  <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a
+                class="footer-icon-link"
+                href="https://www.instagram.com/goitclub/"
+                target="_blank"
+                rel="noopener norefferer"
+              >
+                <svg
+                  class="footer-icon"
+                  aria-label="instagram icon"
+                  width="28"
+                  height="28"
+                >
+                  <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a
+                class="footer-icon-link"
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                rel="noopener norefferer"
+              >
+                <svg
+                  class="footer-icon"
+                  aria-label="youtube icon"
+                  width="28"
+                  height="28"
+                >
+                  <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-------- NAVIGATGION -------->
-      <nav class="footer-navigation">
-        <ul class="footer-navigation-list list">
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link link" href="#english-about">About us</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link link" href="#english-lessons">Our lessons</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link link" href="#english-teachers">Teachers</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link link" href="#english-reviews">Reviews</a>
-          </li>
-          <li class="footer-navigation-item">
-            <a class="footer-navigation-link link" href="#english-application">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-      <!---------- SOCIALS --------->
-      <div class="footer-icon-wrapper">
-        <ul class="footer-icon-list">
-          <li class="footer-icon-item">
-            <a class="footer-icon-link" href="https://www.facebook.com/goITclub/" target="_blank"
-              rel="noopener norefferer">
-              <svg class="footer-icon" aria-label="facebook icon" width="28" height="28">
-                <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-icon-item">
-            <a class="footer-icon-link" href="https://www.instagram.com/goitclub/" target="_blank"
-              rel="noopener norefferer">
-              <svg class="footer-icon" aria-label="instagram icon" width="28" height="28">
-                <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-icon-item">
-            <a class="footer-icon-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener norefferer">
-              <svg class="footer-icon" aria-label="youtube icon" width="28" height="28">
-                <use href="/cheshire-cats/assets/icons-05f1ba29.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-------- ALL RIGHT -------->
-    <div class="footer-vector">
-      <div class="footer-text-wrapper">
-        <p class="footer-text">
-          ©2023 English Excellence. All rights reserved.
-        </p>
-        <ul class="footer-policy footer-text-wrap">
-          <li class="footer-policy-item">
-            <a href="" class="footer-text" data-modal-open>Privacy Policy</a>
-          </li>
-          <li class="footer-policy-item">
-            <a href="" class="footer-text" data-modal-open>Terms of Service</a>
-          </li>
-        </ul>
+      <!-------- ALL RIGHT -------->
+      <div class="footer-vector">
+        <div class="footer-text-wrapper">
+          <p class="footer-text">
+            ©2023 English Excellence. All rights reserved.
+          </p>
+          <ul class="footer-policy footer-text-wrap">
+            <li class="footer-policy-item">
+              <a href="" class="footer-text" data-modal-open>Privacy Policy</a>
+            </li>
+            <li class="footer-policy-item">
+              <a href="" class="footer-text"  data-modal-open>Terms of Service</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</footer>
+
   <div class="modal-backdrop modal-is-hidden" data-modal>
   <div class="modal">
     <button class="close-btn" data-modal-close type="button">
