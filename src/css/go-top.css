@@ -1,0 +1,49 @@
+.go-top {
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  cursor: pointer;
+  display: none;
+  fill: var(--color-white);
+  background-color: var(--color-green);
+  transform: rotate(180deg);
+}
+
+.go-top-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .go-top {
+    right: 32px;
+    bottom: 32px;
+    width: 48px;
+    height: 48px;
+  }
+  .go-top-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.go-top:hover,
+.go-top:focus {
+  background-color: var(--color-white);
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.go-top:hover .go-top-icon,
+.go-top:focus .go-top-icon {
+  fill: var(--color-green);
+  transition: fill var(--transition-dur-and-func);
+}
+
+.go-top--show {
+  display: flex;
+}
