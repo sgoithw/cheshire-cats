@@ -70,47 +70,53 @@
           ></textarea>
         </label>
 
-        <h3 class="laa-choose-title">Choose a teacher</h3>
+        <fieldset class="leave-radio-group">
+          <legend class="leave-radio-group-title">Choose a teacher</legend>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="maria"
+              id="radio-Maria"
+              checked
+            />
+            <label class="leave-radio-label" id="radio-Maria">Maria</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="artem"
+              id="radio-Artem"
+            />
+            <label class="leave-radio-label" id="radio-Artem">Artem</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="ilona"
+              id="radio-Ilona"
+            />
+            <label class="leave-radio-label" id="radio-Ilona">Artem</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="volodymyr"
+              id="radio-Ilona"
+            />
+            <label class="leave-radio-label" id="radio-Ilona">Volodymyr</label>
+          </div>
+        </fieldset>
 
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="marina"
-            checked
-          />
-          Maria
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="artem"
-          />
-          Artem
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="ilona"
-          />
-          Ilona
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="volodymyr"
-          />
-          Volodymyr
-        </label>
+        <button class="leave-btn-form" type="submit" id="submitButton">Send</button>
 
-        <button class="btn-form">Send</button>
         <p class="tx-laa">
           By clicking on “Send” button, you agree to our
           <span>Privacy Policy</span>, and allow Promodo to use this information

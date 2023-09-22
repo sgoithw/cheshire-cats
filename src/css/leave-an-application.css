@@ -131,3 +131,245 @@
         margin-bottom: 80px;
     }
 }
+
+/* -----------RADIO BUTTONS ----------- */
+
+
+/* .leave-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+    border: none;
+}
+
+.laa-choose-title {
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+}
+
+.leave-radio {
+    position: relative;
+}
+
+
+.laa-radio-input {
+    display: none;
+  }
+
+
+.laa-form-input {
+}
+
+.leave-radio-label {
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71em;
+    letter-spacing: -0.28px;
+    color: var(--color-black);
+}
+
+.leave-radio-label::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+    transition: border-color var(--transition-dur-and-func);
+  }
+
+  .leave-radio-label::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--color-green);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    z-index: 2;
+    transition: opacity var(--transition-dur-and-func);
+  }
+
+  .laa-form-input:checked + .leave-radio-label::before {
+    border-color: var(--color-green);
+  }
+  
+  .laa-form-input:checked + .leave-radio-label::after {
+    opacity: 1;
+  } */
+
+
+
+
+  .leave-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+    border: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-group {
+      flex-direction: row;
+      gap: 16px;
+      margin: 0px 0px 32px 0px;
+    }
+  }
+  
+  .leave-radio-group-title {
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-group-title {
+      margin-bottom: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-btn-title {
+      margin-bottom: 16px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  
+  .leave-radio {
+    position: relative;
+  }
+  
+  .leave-radio-input {
+    display: none;
+  }
+  
+  .leave-radio-label {
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71em;
+    letter-spacing: -0.28px;
+    color: var(--color-black);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-label {
+      font-size: 18px;
+      line-height: 1.33em;
+      letter-spacing: -0.36px;
+    }
+  }
+  
+  .leave-radio-label::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 1;
+    transition: border-color var(--transition-dur-and-func);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-label::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .leave-radio-label::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--color-green);
+    background-color: var(--color-green);
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+    z-index: 2;
+    transition: opacity var(--transition-dur-and-func);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-radio-label::after {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  .leave-radio-input:checked + .leave-radio-label::before {
+    border-color: var(--color-green);
+  }
+  
+  .leave-radio-input:checked + .leave-radio-label::after {
+    opacity: 1;
+  }
+
+
+  /* --------- BTN FORM--------- */
+
+.leave-btn-form {
+    display: block;
+    height: 52px;
+    padding: 0px;
+    width: 100%;
+    max-width: 335px;
+    margin-bottom: 16px;
+    margin: 0 auto 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+    transition: background-color var(--transition-dur-and-func);
+  }
+  
+  .leave-btn-form:hover,
+  .leave-btn-form:focus {
+    background-color: var(--color-dark-green);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .leave-btn-form {
+      padding: 16px 228px;
+      min-width: 500px;
+      height: 60px;
+      font-size: 18px;
+      line-height: 1.55;
+    }
+  }
+  
