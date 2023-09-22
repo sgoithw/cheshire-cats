@@ -38,29 +38,6 @@
     border: 1px solid #4DC274;
 }
 
-.laa-input::placeholder {
-    color: #121417;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.28;
-}
-
-.laa-name-form {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.laa-main-part-title {
-    color: #ffffff;
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.02em;
-}
-
 .laa-main-part-prgf {
     display: flex;
     flex-direction: column;
@@ -74,6 +51,148 @@
     width: 452px;
     height: 70px;
 }
+
+.laa-title {
+    color: #121417;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .laa-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}
+
+.laa-section-description {
+    color: rgba(18, 20, 23, 0.80);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .laa-section-description {
+        color: rgba(18, 20, 23, 0.50);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.66;
+        max-width: 586px;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .laa-section-description {
+        max-width: 709px;
+    }
+}
+
+.laa-main-part-title {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.laa-input::placeholder {
+    color: #121417;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+}
+
+@media only screen and (min-width: 768px) {
+    .laa-input::placeholder {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+.laa-choose-title {
+    color: #121417;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+    .laa-choose-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+
+.form-label {
+    color: #121417;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-label {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+}
+
+.btn-form {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn-form {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
+.tx-laa-accent,
+.tx-laa {
+    color: rgba(18, 20, 23, 0.50);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: left;
+}
+
+.tx-laa-accent {
+    text-decoration-line: underline;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .tx-laa-accent,
+    .tx-laa {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.laa-name-form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 
 @media (min-width: 320px) and (max-width: 1280px) {
     .laa-hidden-container {
@@ -105,29 +224,5 @@
 @media (min-width: 320px) and (max-width: 768px) {
     .section-title-highlight {
         background-color: #ffffff;
-    }
-}
-
-.laa-section-description {
-    max-width: 335px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-    .laa-section-description {
-        font-size: 18px;
-        line-height: 1.66;
-        max-width: 586px;
-        margin-bottom: 64px;
-    }
-
-}
-
-@media only screen and (min-width: 1280px) {
-    .laa-section-description {
-        max-width: 709px;
-        margin-bottom: 80px;
     }
 }
