@@ -81,6 +81,7 @@
   /* ---------HEADER NAVIGATION--------- */
   
   /* ABOUT US */
+
   .header-navigatoin-link-about {
     font-size: 14px;
     font-weight: 600;
@@ -109,7 +110,7 @@
  
   /* LESSONS */
 
-.header-navigatoin-link-lessons {
+  .header-navigatoin-link-lessons {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28em;
@@ -140,6 +141,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28em;
+    font-family: "Manrope";
     color: var(--color-black);
     padding: 20px 0;
   }
@@ -149,7 +151,7 @@
     position: absolute;
     width: 37px;
     height: 2px;
-    left: 80px;
+    left: 0;
     bottom: -4px;
     background-color: var(--color-green);
     opacity: 0;
@@ -176,7 +178,7 @@
     position: absolute;
     width: 37px;
     height: 2px;
-    left: 179px;
+    left: 0;
     bottom: -4px;
     background-color: var(--color-green);
     opacity: 0;
@@ -203,7 +205,7 @@
     position: absolute;
     width: 37px;
     height: 2px;
-    left: 261px;
+    left: 0;
     bottom: -4px;
     background-color: var(--color-green);
     opacity: 0;
@@ -213,10 +215,8 @@
   .header-navigatoin-link-contact:hover::after {
     opacity: 1;
   }
-  
-  
- 
-  
+
+
   /* -------HEADER SOC-MEDIA ------- */
   
   .header-soc-list {
@@ -285,6 +285,7 @@
       display: none;
     }
   }
+
   
   /* --------MOBILE MENU------- */
   
