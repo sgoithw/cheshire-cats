@@ -1,3 +1,17 @@
+.header {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    margin-bottom: 16px;
+  }
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -218,8 +232,18 @@
 .header-soc-list {
   display: none;
 }
+.header-navigation-item {
+  position: relative;
+}
 
 @media screen and (min-width: 1280px) {
+  .header-navigation-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
   .header-soc-list {
     display: flex;
     align-items: center;
@@ -227,6 +251,146 @@
     gap: 12px;
   }
 }
+
+/* ---------HEADER NAVIGATION--------- */
+
+/* ABOUT US */
+
+.header-navigatoin-link {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28em;
+  font-family: 'Manrope';
+  color: var(--color-black);
+  padding: 20px 0;
+}
+
+.header-navigatoin-link::after {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: var(--color-green);
+  opacity: 0;
+  transition: opacity var(--transition-dur-and-func);
+}
+
+.header-navigatoin-link:hover::after {
+  opacity: 1;
+}
+
+/* LESSONS **/
+
+/*.header-navigatoin-link-lessons {*/
+/*  font-size: 14px;*/
+/*  font-weight: 600;*/
+/*  line-height: 1.28em;*/
+/*  font-family: "Manrope";*/
+/*  color: var(--color-black);*/
+/*  padding: 20px 0;*/
+/*}*/
+
+/*.header-navigatoin-link-lessons::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 37px;*/
+/*  height: 2px;*/
+/*  left: 0;*/
+/*  bottom: -4px;*/
+/*  background-color: var(--color-green);*/
+/*  opacity: 0;*/
+/*  transition: opacity var(--transition-dur-and-func);*/
+/*}*/
+
+/*.header-navigatoin-link-lessons:hover::after {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*!* TEACHERS *!*/
+
+/*.header-navigatoin-link-teachers {*/
+/*  font-size: 14px;*/
+/*  font-weight: 600;*/
+/*  line-height: 1.28em;*/
+/*  font-family: "Manrope";*/
+/*  color: var(--color-black);*/
+/*  padding: 20px 0;*/
+/*}*/
+
+/*.header-navigatoin-link-teachers::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 37px;*/
+/*  height: 2px;*/
+/*  left: 0;*/
+/*  bottom: -4px;*/
+/*  background-color: var(--color-green);*/
+/*  opacity: 0;*/
+/*  transition: opacity var(--transition-dur-and-func);*/
+/*}*/
+
+/*.header-navigatoin-link-teachers:hover::after {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*!* REVIEWS *!*/
+
+/*.header-navigatoin-link-reviews {*/
+/*  font-size: 14px;*/
+/*  font-weight: 600;*/
+/*  line-height: 1.28em;*/
+/*  font-family: "Manrope";*/
+/*  color: var(--color-black);*/
+/*  padding: 20px 0;*/
+/*}*/
+
+/*.header-navigatoin-link-reviews::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 37px;*/
+/*  height: 2px;*/
+/*  left: 0;*/
+/*  bottom: -4px;*/
+/*  background-color: var(--color-green);*/
+/*  opacity: 0;*/
+/*  transition: opacity var(--transition-dur-and-func);*/
+/*}*/
+
+/*.header-navigatoin-link-reviews:hover::after {*/
+/*  opacity: 1;*/
+/*}*/
+
+/*!* CONTACT *!*/
+
+/*.header-navigatoin-link-contact {*/
+/*  font-size: 14px;*/
+/*  font-weight: 600;*/
+/*  line-height: 1.28em;*/
+/*  font-family: "Manrope";*/
+/*  color: var(--color-black);*/
+/*  padding: 20px 0;*/
+/*}*/
+
+/*.header-navigatoin-link-contact::after {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  width: 37px;*/
+/*  height: 2px;*/
+/*  left: 0;*/
+/*  bottom: -4px;*/
+/*  background-color: var(--color-green);*/
+/*  opacity: 0;*/
+/*  transition: opacity var(--transition-dur-and-func);*/
+/*}*/
+
+/*.header-navigatoin-link-contact:hover::after {*/
+/*  opacity: 1;*/
+/*}
+/**/
+
+/* -------HEADER SOC-MEDIA ------- */
 
 .header-soc-item {
   width: 44px;
@@ -299,10 +463,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .menu-open-icon {
+    stroke: var(--color-black);
+  }
   .menu-container {
     width: 50vw;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .menu-open {
+    display: none;
+  }
+}
+
+/* --------MOBILE MENU------- */
 
 .menu-container {
   transform: translateX(0);
