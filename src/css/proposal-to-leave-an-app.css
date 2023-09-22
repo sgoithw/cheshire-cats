@@ -21,6 +21,11 @@
   border-radius: 16px;
   background: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
 }
+@media only screen and (max-width: 375px) {
+  .proposal-container {
+    overflow: hidden;
+  }
+}
 /* Styles for tablet devices */
 @media only screen and (min-width: 768px) {
   .proposal-container {
