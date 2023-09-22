@@ -9,8 +9,9 @@
   bottom: 14px;
   cursor: pointer;
   display: none;
-  fill: var(--color-green);
-  background-color: var(--color-white);
+  fill: var(--color-white);
+  background-color: var(--color-green);
+  transform: rotate(180deg);
 }
 
 .go-top-icon {
@@ -33,18 +34,14 @@
 
 .go-top:hover,
 .go-top:focus {
-  background-color: var(--color-green);
-
+  background-color: var(--color-white);
   transition: background-color var(--transition-dur-and-func);
 }
 
 .go-top:hover .go-top-icon,
 .go-top:focus .go-top-icon {
-  fill: var(--color-white);
-  transform: rotate(-90deg);
-
-  transition: fill var(--transition-dur-and-func),
-    transform var(--transition-dur-and-func);
+  fill: var(--color-green);
+  transition: fill var(--transition-dur-and-func);
 }
 
 .go-top--show {
