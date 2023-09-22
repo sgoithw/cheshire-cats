@@ -1,7 +1,6 @@
 .proposal {
 }
 .proposal-container {
-  display: block;
   position: relative;
   z-index: 1;
   padding: 40px 20px;
@@ -40,7 +39,7 @@
   overflow: hidden;
 }
 
-.section-title {
+.proposal-section-title {
   color: #fff;
   text-align: left;
 
@@ -54,14 +53,14 @@
 }
 /* Styles for tablet devices */
 @media only screen and (min-width: 768px) {
-  .section-title {
+  .proposal-section-title {
     font-size: 60px;
     margin-right: 83px;
     margin-bottom: 83px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .section-title {
+  .proposal-section-title {
     width: 776px;
     font-size: 60px;
     margin-right: 312px;
@@ -72,7 +71,6 @@
   color: #bee8cc;
 }
 .proposal-card {
-  position: relative;
   width: 295px;
   height: 408px;
 
@@ -94,12 +92,12 @@
   .proposal-card {
     width: 1024px;
     height: 471px;
-
+    position: relative;
     padding: 64px;
   }
 }
-.container .proposal-card::before,
-.container .proposal-card::after {
+.proposal-container .proposal-card::before,
+.proposal-container .proposal-card::after {
   position: absolute;
   z-index: -1;
 
@@ -112,7 +110,7 @@
   left: 0;
   bottom: 0;
 
-  transform: rotate(11deg);
+  transform: rotate(50deg);
   transform: rotate(-9deg);
 }
 .proposal .proposal-card::before {
@@ -158,7 +156,7 @@
     margin-bottom: 32px;
   }
 }
-.item {
+.proposal-list-item {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -174,7 +172,7 @@
   text-align: left;
 }
 @media only screen and (min-width: 768px) {
-  .item {
+  .proposal-list-item {
     font-size: 20px;
     line-height: 1.2;
 
@@ -241,34 +239,33 @@
 }
 @media only screen and (min-width: 768px) {
   .proposal-button {
-    position: relative;
-
     width: 306px;
     border-radius: 12px;
-
     color: #fff;
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 155.556% */
-
     padding: 16px 0;
   }
+}
+
+@media only screen and (min-width: 768px) {
   .proposal-button::after {
     position: absolute;
-    bottom: 1px;
-    left: 746px;
-
+    bottom: 157px;
+    right: 0px;
     width: 214px;
     height: 263px;
-
-    content: url(../images/proposal-books.jpg);
+    content: url(../images/proposal-books-tab.jpg);
   }
 }
 @media only screen and (min-width: 1280px) {
   .proposal-button::after {
-    right: -746px;
+    right: 0;
+    bottom: 79px;
+    content: url(../images/proposal-books.jpg);
   }
 }
 .proposal-link {
