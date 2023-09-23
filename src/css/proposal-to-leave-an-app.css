@@ -132,9 +132,6 @@
   border-radius: 16px;
   left: 0;
   bottom: 0;
-
-  transform: rotate(11deg);
-  transform: rotate(-9deg);
 }
 .proposal-card::before {
   transform: rotate(11deg);
