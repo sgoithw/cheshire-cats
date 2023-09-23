@@ -9,8 +9,8 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
   
-  <script type="module" crossorigin src="/cheshire-cats/assets/index-e5c25558.js"></script>
-  <link rel="stylesheet" href="/cheshire-cats/assets/index-c641bb4a.css">
+  <script type="module" crossorigin src="/cheshire-cats/assets/index-6eae7177.js"></script>
+  <link rel="stylesheet" href="/cheshire-cats/assets/index-1062cbd7.css">
 </head>
 <body>
   <!--------- HEADER -------->
@@ -146,7 +146,7 @@
   <main>
     <section id="hero" class="hero">
   <div class="container hero-container">
-    <h1 class="hero-title">
+    <h1 class="hero-title" id="hero-title">
       Discover the joy of learning <span class="hero-accent">English</span> with
       us!
     </h1>
@@ -173,25 +173,41 @@
     </div>
     <div class="about-us-container-content">
       <ol class="about-us-list">
-        <li class="about-us-list-item">
+        <li
+          class="about-us-list-item"
+          data-toggle-in-view="animate__animated animate__fadeInLeft animate__fast"
+          data-animation-group="about-us"
+        >
           <div class="about-us-list-item-number">01</div>
           <div class="about-us-list-item-text">
             Expert, innovative teaching staff
           </div>
         </li>
-        <li class="about-us-list-item">
+        <li
+          class="about-us-list-item"
+          data-toggle-in-view="animate__animated animate__fadeInLeft animate__fast"
+          data-animation-group="about-us"
+        >
           <div class="about-us-list-item-number">02</div>
           <div class="about-us-list-item-text">
             Wide range of course levels and options
           </div>
         </li>
-        <li class="about-us-list-item">
+        <li
+          class="about-us-list-item"
+          data-toggle-in-view="animate__animated animate__fadeInLeft animate__fast"
+          data-animation-group="about-us"
+        >
           <div class="about-us-list-item-number">03</div>
           <div class="about-us-list-item-text">
             Multicultural learning environment
           </div>
         </li>
-        <li class="about-us-list-item">
+        <li
+          class="about-us-list-item"
+          data-toggle-in-view="animate__animated animate__fadeInLeft animate__fast"
+          data-animation-group="about-us"
+        >
           <div class="about-us-list-item-number">04</div>
           <div class="about-us-list-item-text">
             Comprehensive language support services
@@ -200,6 +216,8 @@
       </ol>
       <div class="about-us-container-image">
         <img
+          data-toggle-in-view="rotateShow"
+          data-animation-group="about-us"
           class="about-us-image"
           srcset="/cheshire-cats/assets/memoji-28dfffb0.jpg 1x, /cheshire-cats/assets/memoji@2x-9f83c72e.jpg 2x"
           src="/cheshire-cats/assets/memoji-28dfffb0.jpg"
@@ -210,6 +228,7 @@
     </div>
   </div>
 </section>
+
     <section class="our-lessons" id="english-lessons">
   <div class="container">
     <h2 class="our-lessons-section section-title">
@@ -266,12 +285,17 @@
     <section class="proposal" id="english">
   <div class="proposal-container container">
     <h2 class="visually-hidden">Features</h2>
-    <p class="proposal-section-title section-title">
+    <p class="proposal-section-title section-title" id="proposal-section-title">
       Master the
       <span class="title-acsent">Language</span>
       with Our English Package!
     </p>
-    <div class="proposal-card">
+    <div
+      class="proposal-card"
+      data-toggle-in-view="animated"
+      data-full-in-view
+      data-start-correction="65"
+    >
       <h3 class="proposal-card-title">Power of English</h3>
       <ul class="proposal-list">
         <li class="proposal-list-item">
@@ -307,17 +331,23 @@
         </li>
       </ul>
       <div class="proposal-button">
-        <a class="proposal-link" href="#english-application">Leave an application</a>
+        <a class="proposal-link" href="#english-application"
+          >Leave an application</a
+        >
       </div>
     </div>
   </div>
 </section>
+
     <section class="teachers-section section" id="english-teachers">
   <div class="container">
-    <h2 class="teachers-title section-title">Meet our <span class="section-title-highlight">teachers</span></h2>
+    <h2 class="teachers-title section-title">
+      Meet our <span class="section-title-highlight">teachers</span>
+    </h2>
     <p class="teachers-text section-description">
       Discover our team of dedicated educators, committed to guiding you on your
-      journey <br> to English proficiency with personalized and engaging instruction
+      journey <br />
+      to English proficiency with personalized and engaging instruction
     </p>
     <ul class="our-teachers-list list">
       <li class="teachers-foto-item">
@@ -325,33 +355,45 @@
           srcset="/cheshire-cats/assets/maria-e798e547.jpg 1x, /cheshire-cats/assets/maria@2x-eadfcc45.jpg 2x"
           src="/cheshire-cats/assets/maria-e798e547.jpg"
           alt="maria teacher"
+          data-toggle-in-view="pulseShow"
+          data-animation-group="teachers"
           width="150"
           height="150"
           loading="lazy"
         />
-        <div class="teacher-info-list">
-        <h3 class="teachers-subtitle subtitle">Maria</h3>
-        <p class="tx-teachers">
-          A seasoned linguist and our primary specialist in beginner-level
-          instruction, Maria brings warmth and patience to every class
-        </p>
-    </div>
+        <div
+          class="teacher-info-list"
+          data-toggle-in-view="animate__animated animate__fast animate__fadeIn"
+          data-animation-group="teachers"
+        >
+          <h3 class="teachers-subtitle subtitle">Maria</h3>
+          <p class="tx-teachers">
+            A seasoned linguist and our primary specialist in beginner-level
+            instruction, Maria brings warmth and patience to every class
+          </p>
+        </div>
       </li>
       <li class="teachers-foto-item">
         <img
           srcset="/cheshire-cats/assets/artem-7c47a892.jpg 1x, /cheshire-cats/assets/artem@2x-79c630f9.jpg 2x"
           src="/cheshire-cats/assets/artem-7c47a892.jpg"
           alt="artem teacher"
+          data-toggle-in-view="pulseShow"
+          data-animation-group="teachers"
           width="150"
           height="150"
           loading="lazy"
         />
-        <div class="teacher-info-list">
-        <h3 class="teachers-subtitle subtitle">Artem</h3>
-        <p class="tx-teachers">
-          With his innovative teaching techniques and a focus on interactive
-          learning, Artem excels in keeping students engaged and motivated
-        </p>
+        <div
+          class="teacher-info-list"
+          data-toggle-in-view="animate__animated animate__fast animate__fadeIn"
+          data-animation-group="teachers"
+        >
+          <h3 class="teachers-subtitle subtitle">Artem</h3>
+          <p class="tx-teachers">
+            With his innovative teaching techniques and a focus on interactive
+            learning, Artem excels in keeping students engaged and motivated
+          </p>
         </div>
       </li>
       <li class="teachers-foto-item">
@@ -359,36 +401,48 @@
           srcset="/cheshire-cats/assets/ilona-e81c3261.jpg 1x, /cheshire-cats/assets/ilona@2x-2f771e1f.jpg 2x"
           src="/cheshire-cats/assets/ilona-e81c3261.jpg"
           alt="ilona teacher"
+          data-toggle-in-view="pulseShow"
+          data-animation-group="teachers"
           width="150"
           height="150"
           loading="lazy"
         />
-        <div class="teacher-info-list">
-        <h3 class="teachers-subtitle subtitle">Ilona</h3>
-        <p class="tx-teachers">
-          A specialist in advanced English, Ilona provides intensive
-          instruction, ensuring students gain confidence in complex language
-          tasks
-        </p>
+        <div
+          class="teacher-info-list"
+          data-toggle-in-view="animate__animated animate__fast animate__fadeIn"
+          data-animation-group="teachers"
+        >
+          <h3 class="teachers-subtitle subtitle">Ilona</h3>
+          <p class="tx-teachers">
+            A specialist in advanced English, Ilona provides intensive
+            instruction, ensuring students gain confidence in complex language
+            tasks
+          </p>
         </div>
       </li>
       <li class="teachers-foto-item">
         <img
           srcset="/cheshire-cats/assets/volodymyr-750f0b3f.jpg 1x, /cheshire-cats/assets/volodymyr@2x-6b490cce.jpg 2x"
           src="/cheshire-cats/assets/volodymyr-750f0b3f.jpg"
+          data-toggle-in-view="pulseShow"
+          data-animation-group="teachers"
           alt="volodymyr teacher"
           width="150"
           height="150"
           loading="lazy"
         />
-        <div class="teacher-info-list">
-        <h3 class="teachers-subtitle subtitle">Volodymyr</h3>
-        <p class="tx-teachers">
-          Our expert in English for specific purposes, Volodymyr tailors his
-          approach to meet individual career and industry-specific language
-          needs
-        </p>
-    </div>
+        <div
+          class="teacher-info-list"
+          data-toggle-in-view="animate__animated animate__fast animate__fadeIn"
+          data-animation-group="teachers"
+        >
+          <h3 class="teachers-subtitle subtitle">Volodymyr</h3>
+          <p class="tx-teachers">
+            Our expert in English for specific purposes, Volodymyr tailors his
+            approach to meet individual career and industry-specific language
+            needs
+          </p>
+        </div>
       </li>
     </ul>
   </div>
@@ -539,7 +593,10 @@
     <div class="swiper">
       <ul class="reviews-list swiper-wrapper">
         <!-- REVIEW 1 -->
-        <li class="reviews-item swiper-slide">
+        <li
+          class="reviews-item swiper-slide"
+          data-toggle-in-view="animate__animated animate__fast animate__flipInX"
+        >
           <div class="reviews-item-wrapper">
             <div class="reviews-item-box">
               <img
@@ -563,7 +620,10 @@
           </p>
         </li>
         <!-- REVIEW 2 -->
-        <li class="reviews-item swiper-slide">
+        <li
+          class="reviews-item swiper-slide"
+          data-toggle-in-view="animate__animated animate__fast animate__flipInX"
+        >
           <div class="reviews-item-wrapper">
             <div class="reviews-item-box">
               <img
@@ -587,7 +647,10 @@
           </p>
         </li>
         <!-- REVIEW 3 -->
-        <li class="reviews-item swiper-slide">
+        <li
+          class="reviews-item swiper-slide"
+          data-toggle-in-view="animate__animated animate__fast animate__flipInX"
+        >
           <div class="reviews-item-wrapper">
             <div class="reviews-item-box">
               <img
