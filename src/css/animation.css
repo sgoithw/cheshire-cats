@@ -1,0 +1,217 @@
+/* Animation Corections */
+
+#hero-title > span.animated {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+#hero-title > span:nth-child(1) {
+  animation-delay: 0;
+}
+
+#hero-title > span:nth-child(2) {
+  animation-delay: 0.125s;
+}
+
+#hero-title > span:nth-child(3) {
+  animation-delay: 0.25s;
+}
+
+#hero-title > span:nth-child(4) {
+  animation-delay: 0.375s;
+}
+
+#hero-title > span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+#hero-title > span:nth-child(6) {
+  animation-delay: 0.625s;
+}
+
+#hero-title > span:nth-child(7) {
+  animation-delay: 0.75s;
+}
+
+#hero-title > span:nth-child(8) {
+  animation-delay: 0.875s;
+}
+.about-us-image {
+  opacity: 0;
+  animation-delay: 1.1s;
+}
+.about-us-container-image {
+  overflow: hidden;
+}
+.about-us-list-item {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.about-us-list-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.about-us-list-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about-us-list-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.about-us-list-item:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+#proposal-section-title > span.animated {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+#proposal-section-title > span.animated:nth-child(1) {
+  animation-delay: 0;
+}
+#proposal-section-title > span.animated:nth-child(2) {
+  animation-delay: 0.125s;
+}
+#proposal-section-title > span.animated:nth-child(3) {
+  animation-delay: 0.25s;
+}
+#proposal-section-title > span.animated:nth-child(4) {
+  animation-delay: 0.375s;
+}
+#proposal-section-title > span.animated:nth-child(5) {
+  animation-delay: 0.5s;
+}
+#proposal-section-title > span.animated:nth-child(6) {
+  animation-delay: 0.625s;
+}
+#proposal-section-title > span.animated:nth-child(7) {
+  animation-delay: 0.75s;
+}
+.teachers-foto-item > img {
+  animation-duration: 0.5s;
+}
+
+.teachers-foto-item:nth-child(1) > img {
+  animation-delay: 0.125s;
+}
+
+.teachers-foto-item:nth-child(2) > img {
+  animation-delay: 0.25s;
+}
+
+.teachers-foto-item:nth-child(3) > img {
+  animation-delay: 0.375s;
+}
+
+.teachers-foto-item:nth-child(4) > img {
+  animation-delay: 0.5s;
+}
+.teacher-info-list {
+  opacity: 0;
+  animation-delay: 0.8s;
+}
+.teachers-foto-item > img {
+  opacity: 0;
+}
+
+.proposal-card::before,
+.proposal-card::after {
+  transition: transform 750ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotate(0);
+}
+.proposal-card.animated::before {
+  transform: rotate(11deg);
+}
+.proposal-card.animated::after {
+  transform: rotate(-9deg);
+}
+
+.reviews-item {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Custom animations */
+.rotateShow {
+  animation-name: rotateShow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.pulseShow {
+  animation-name: pulseShow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes rotateShow {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseShow {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-20deg);
+    transform: perspective(400px) rotateX(-20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotateX(-5deg);
+    transform: perspective(400px) rotateX(-5deg);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    opacity: 1;
+  }
+}

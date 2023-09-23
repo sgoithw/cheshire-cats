@@ -5,6 +5,7 @@
   |============================
 */
 @import './../../node_modules/modern-normalize/modern-normalize.css';
+@import './../../node_modules/animate.css/animate.min.css';
 @import url('./reset.css');
 @import url('./variables.css');
 @import url('./main.css');
@@ -19,3 +20,4 @@
 @import url('./footer.css');
 @import url('./modal-privacy.css');
 @import url('./go-top.css');
+@import url('./animation.css');
