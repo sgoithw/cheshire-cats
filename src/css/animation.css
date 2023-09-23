@@ -65,6 +65,34 @@
   animation-delay: 0.6s;
 }
 
+#proposal-section-title > span.animated {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+#proposal-section-title > span.animated:nth-child(1) {
+  animation-delay: 0;
+}
+#proposal-section-title > span.animated:nth-child(2) {
+  animation-delay: 0.125s;
+}
+#proposal-section-title > span.animated:nth-child(3) {
+  animation-delay: 0.25s;
+}
+#proposal-section-title > span.animated:nth-child(4) {
+  animation-delay: 0.375s;
+}
+#proposal-section-title > span.animated:nth-child(5) {
+  animation-delay: 0.5s;
+}
+#proposal-section-title > span.animated:nth-child(6) {
+  animation-delay: 0.625s;
+}
+#proposal-section-title > span.animated:nth-child(7) {
+  animation-delay: 0.75s;
+}
 .teachers-foto-item > img {
   animation-duration: 0.5s;
 }

@@ -1,6 +1,11 @@
 (() => {
     let heroAnimation = document.querySelector('#hero-title');
     let inViewAnimation = document.querySelectorAll('[data-toggle-in-view]');
+    let proposalSectionTitle = document.querySelector('#proposal-section-title');
+
+    let proposalTitleShowed = false;
+
+    proposalSectionTitle.classList.add('is-hidden');
 
     let heroAnimationContent = heroAnimation.innerHTML;
     heroAnimation.innerHTML = `
@@ -17,10 +22,12 @@
      }, 1300);
     
     
-     animateIfInViewport();
+    animateIfInViewport();
+    animateProposalSection();
 
      document.addEventListener('scroll', () => {
          animateIfInViewport();
+         animateProposalSection();
      });
     
     
@@ -54,6 +61,32 @@
 
     function addAnimationClass(element) {
       element.dataset.toggleInView.split(" ").forEach(animation => element.classList.add(animation));
+    }
+
+    function animateProposalSection() {
+
+        let position = proposalSectionTitle.getBoundingClientRect().top + (window.innerHeight / 3);
+
+        if (position < window.innerHeight && !proposalTitleShowed) {
+            proposalTitleShowed = true;
+            proposalSectionTitle.classList.remove('is-hidden');
+        
+            let prevHtml = proposalSectionTitle.innerHTML;
+
+            proposalSectionTitle.innerHTML = `
+            <span class="animated">Master</span>
+            <span class="animated">the</span>
+            <span class="title-acsent animated">Language</span>
+            <span class="animated">with</span>
+            <span class="animated">Our</span>
+            <span class="animated">English</span>
+            <span class="animated">Package!</span>
+            `;
+            setTimeout(() => {
+            proposalSectionTitle.innerHTML = prevHtml;
+            }, 1300);
+            
+        }
     }
     
 })();
