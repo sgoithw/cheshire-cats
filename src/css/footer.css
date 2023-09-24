@@ -54,7 +54,8 @@
   transition: transform var(--transition-dur-and-func);
 }
 
-.footer-logo:hover {
+.footer-logo:hover,
+.footer-logo:focus {
   transform: scale(1.1);
 }
 
@@ -192,7 +193,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.footer-navigation-link:hover::after {
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus::after {
   opacity: 1;
 }
 

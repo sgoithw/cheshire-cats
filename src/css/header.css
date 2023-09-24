@@ -62,7 +62,8 @@
   color: var(--color-green);
 }
 
-.header-logo:hover {
+.header-logo:hover,
+.header-logo:focus {
   transform: scale(1.1);
 }
 
@@ -116,7 +117,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link-about:hover::after {
+.header-navigatoin-link-about:hover::after,
+.header-navigatoin-link-about:focus::after {
   opacity: 1;
 }
 
@@ -143,7 +145,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link-lessons:hover::after {
+.header-navigatoin-link-lessons:hover::after,
+.header-navigatoin-link-lessons:focus::after {
   opacity: 1;
 }
 
@@ -169,7 +172,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link-teachers:hover::after {
+.header-navigatoin-link-teachers:hover::after,
+.header-navigatoin-link-teachers:focus::after {
   opacity: 1;
 }
 
@@ -196,7 +200,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link-reviews:hover::after {
+.header-navigatoin-link-reviews:hover::after,
+.header-navigatoin-link-reviews:focus::after {
   opacity: 1;
 }
 
@@ -223,7 +228,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link-contact:hover::after {
+.header-navigatoin-link-contact:hover::after,
+.header-navigatoin-link-contact:focus::after {
   opacity: 1;
 }
 
@@ -277,7 +283,8 @@
   transition: opacity var(--transition-dur-and-func);
 }
 
-.header-navigatoin-link:hover::after {
+.header-navigatoin-link:hover::after,
+.header-navigatoin-link:focus::after {
   opacity: 1;
 }
 
@@ -321,7 +328,8 @@
   transition: transform var(--transition-dur-and-func);
 }
 
-.menu-open:hover {
+.menu-open:hover,
+.menu-open:focus {
   transform: scale(1.1);
 }
 
@@ -392,7 +400,8 @@
   transition: transform var(--transition-dur-and-func);
 }
 
-.menu-close-button:hover {
+.menu-close-button:hover,
+.menu-close-button:focus {
   transform: scale(1.1);
 }
 
@@ -418,7 +427,8 @@
   transition: letter-spacing var(--transition-dur-and-func);
 }
 
-.menu-navigation-link:hover {
+.menu-navigation-link:hover,
+.menu-navigation-link:focus {
   letter-spacing: 2px;
 }
 
