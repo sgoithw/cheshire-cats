@@ -1,9 +1,9 @@
 <section class="leave-an-aplication section" id="english-application">
   <div class="laa-main container">
-    <h2 class="laa-title section-description">
+    <h2 class="laa-title section-title">
       Leave an <span class="section-title-highlight">application</span>
     </h2>
-    <p class="laa-section-description section-title-text">
+    <p class="section-description laa-section-description section-title-text">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
@@ -11,8 +11,8 @@
       <div class="laa-hidden-container">
         <img
           class="laa-thumb-pic"
-          srcset="./images/thumb-image.jpg 1x, ./images/trumb-image@2x.jpg 2x"
-          src="../images/thumb-image.jpg"
+          srcset="./images/thumb-image.png 1x, ./images/thumb-image@2x.png 2x"
+          src="./images/thumb-image.jpg"
           alt="Girl in headphones learning English"
           width="597"
           height="537"
@@ -25,96 +25,111 @@
         </p>
       </div>
       <form class="laa-name-form">
-        <label class="laa-label-form-name" for="user-name">
-          <input
-            class="laa-input"
-            id="user-name"
-            type="text"
-            name="user-name"
-            required
-            minlength="3"
-            placeholder="Name"
-          />
-        </label>
-        <label class="laa-label-form-name" for="user-email">
-          <input
-            class="laa-input"
-            type="email"
-            name="user-email"
-            id="user-email"
-            required
-            placeholder="Email"
-          />
-        </label>
-        <label class="laa-label-form-name" for="user-phone">
-          <input
-            class="laa-input"
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            required
-            placeholder="Phone"
-            minlength="12"
-            maxlength="12"
-          />
-        </label>
-        <label class="laa-label-form-name" for="user-comment">
-          <textarea
-            class="laa-input"
-            name="user-comment"
-            id="user-comment"
-            rows="4"
-            placeholder="Comment"
-            required
-            minlength="7"
-          ></textarea>
-        </label>
+        <div class="laa-inputs-container">
+          <label class="laa-label-form-name" for="user-name">
+            <input
+              class="laa-input"
+              id="user-name"
+              type="text"
+              name="user-name"
+              required
+              minlength="3"
+              placeholder="Name"
+            />
+          </label>
+          <label class="laa-label-form-name" for="user-email">
+            <input
+              class="laa-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+              placeholder="Email"
+            />
+          </label>
+          <label class="laa-label-form-name" for="user-phone">
+            <input
+              class="laa-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              required
+              placeholder="Phone"
+              minlength="12"
+              maxlength="12"
+            />
+          </label>
+          <label class="laa-label-form-name" for="user-comment">
+            <textarea
+              class="laa-input laa-user-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="4"
+              placeholder="Comment"
+              required
+              minlength="7"
+            ></textarea>
+          </label>
+        </div>
+        <fieldset class="leave-radio-group">
+          <legend class="leave-radio-group-title">Choose a teacher</legend>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="maria"
+              id="radio-Maria"
+              checked
+            />
+            <label class="leave-radio-label" for="radio-Maria">Maria</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="artem"
+              id="radio-Artem"
+            />
+            <label class="leave-radio-label" for="radio-Artem">Artem</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="ilona"
+              id="radio-ilona"
+            />
+            <label class="leave-radio-label" for="radio-ilona">Ilona</label>
+          </div>
+          <div class="leave-radio">
+            <input
+              class="leave-radio-input"
+              type="radio"
+              name="teacher"
+              value="volodymyr"
+              id="radio-volodymyr"
+            />
+            <label class="leave-radio-label" for="radio-volodymyr"
+              >Volodymyr</label
+            >
+          </div>
+        </fieldset>
 
-        <h3 class="laa-choose-title">Choose a teacher</h3>
+        <button
+          class="btn btn-main laa-form-submit"
+          type="submit"
+          id="submitButton"
+        >
+          Send
+        </button>
 
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="marina"
-            checked
-          />
-          Maria
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="artem"
-          />
-          Artem
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="ilona"
-          />
-          Ilona
-        </label>
-        <label class="form-label">
-          <input
-            type="radio"
-            class="laa-form-input"
-            name="hobby"
-            value="volodymyr"
-          />
-          Volodymyr
-        </label>
-
-        <button class="btn-form">Send</button>
         <p class="tx-laa">
           By clicking on “Send” button, you agree to our
-          <span>Privacy Policy</span>, and allow Promodo to use this information
-          for marketing purposes.
+          <span class="tx-laa-accent">Privacy Policy</span>, and allow Promodo
+          to use this information for marketing purposes.
         </p>
       </form>
     </div>
