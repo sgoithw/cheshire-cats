@@ -8,7 +8,7 @@
   animation-fill-mode: forwards;
 }
 #hero-title > span:nth-child(1) {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 #hero-title > span:nth-child(2) {
@@ -73,7 +73,7 @@
   animation-fill-mode: forwards;
 }
 #proposal-section-title > span.animated:nth-child(1) {
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 #proposal-section-title > span.animated:nth-child(2) {
   animation-delay: 0.125s;

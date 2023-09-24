@@ -127,7 +127,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  transition: background-color #4dc274 ease;
+  transition: background-color 0.5s ease;
   transition-delay: 200ms;
 }
 
@@ -164,7 +164,7 @@
 .hero-scroll-btn:hover,
 .hero-scroll-btn:focus {
   background-color: #4dc274;
-  transition: background-color #4dc274 ease;
+  transition: background-color 0.5s ease;
   transition-delay: 200ms;
 }
 
