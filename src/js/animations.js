@@ -41,6 +41,16 @@
             if (typeof element.dataset.startCorrection !== 'undefined') { 
                 position += parseInt(element.dataset.startCorrection);
             }
+
+            if (typeof element.dataset.replaceTo !== 'undefined') { 
+               
+                setTimeout(() => {
+                    element.dataset.toggleInView.split(" ").forEach(animation => element.classList.remove(animation));
+                    element.dataset.replaceTo.split(" ").forEach(animation => element.classList.add(animation));
+                },
+                typeof element.dataset.replaceIn !== "undefined" ? parseInt(element.dataset.replaceIn) : 1300 );
+
+            }
             
             if (position < window.innerHeight) {
                 //element.classList.remove(element.dataset.toggleInView);
