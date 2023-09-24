@@ -145,7 +145,7 @@
   cursor: pointer;
 }
 
-.swiper-wrapper {
+.reviews {
   padding-bottom: 60px;
 }
 
@@ -160,7 +160,7 @@
   outline-offset: 4px;
 
   transform: scale(1);
-  transition: outline-color var(--animation-fast), opacity var(--animation-fast);
+  transition: outline-color var(--animation-fst), opacity var(--animation-fast);
 }
 
 .swiper-pagination-bullet:hover,

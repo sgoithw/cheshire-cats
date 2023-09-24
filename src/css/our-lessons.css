@@ -128,14 +128,16 @@
     padding: 16px;
   }
 }
-.our-lessons-price-item-button:hover {
+.our-lessons-price-item-button:hover,
+.our-lessons-price-item-button:focus {
   background-color: #38ae5f;
 }
 .our-lessons-price-list-item:nth-child(2n) .our-lessons-price-item-button {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+.our-lessons-price-list-item:nth-child(2n) .our-lessons-price-item-button:hover,
 .our-lessons-price-list-item:nth-child(2n)
-  .our-lessons-price-item-button:hover {
+  .our-lessons-price-item-button:focus {
   background-color: #fff;
   color: #4dc274;
   border: 1px solid #fff;
