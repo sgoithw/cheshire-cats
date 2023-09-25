@@ -12,6 +12,7 @@
   fill: var(--color-white);
   background-color: var(--color-green);
   transform: rotate(180deg);
+  z-index: 998;
 }
 
 .go-top-icon {
