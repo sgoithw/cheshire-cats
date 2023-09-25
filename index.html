@@ -9,14 +9,14 @@
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
   
-  <script type="module" crossorigin src="/cheshire-cats/assets/index-51838501.js"></script>
-  <link rel="stylesheet" href="/cheshire-cats/assets/index-db5cda02.css">
+  <script type="module" crossorigin src="/cheshire-cats/assets/index-a0ec7c1c.js"></script>
+  <link rel="stylesheet" href="/cheshire-cats/assets/index-ff123fd7.css">
 </head>
 <body>
   <!-- HEADER -->
 <header class="header">
   <div class="header-container">
-    <a class="header-logo link" href=""
+    <a class="header-logo link" href="#"
       >english<span class="header-logo-excellence">excellence.</span>
     </a>
 
@@ -96,6 +96,7 @@
     </ul>
 
     <button
+      name="Button to open the navigation menu"
       class="menu-open js-open-menu"
       type="button"
       aria-expanded="false"
@@ -110,6 +111,7 @@
         aria-controls="mobile-menu"
         aria-expanded="false"
         role="img"
+        loading="lazy"
       >
         <use
           class="menu-open-icon"
@@ -124,6 +126,7 @@
   <div class="backdrop js-menu-container">
     <div class="menu-container" id="mobile-menu">
       <button
+        name="Button to close the navigation menu"
         type="button"
         class="menu-close-button js-close-menu"
         data-menu-close-btn
@@ -221,7 +224,11 @@
       us!
     </h1>
     <a href="#english-application" class="hero-btn">Leave an application</a>
-    <a href="#footer-anchor" class="hero-scroll-btn">
+    <a
+      href="#footer-anchor"
+      class="hero-scroll-btn"
+      aria-label="Button to proceed to sending the request"
+    >
       <svg class="scroll-icon" width="24" height="24">
         <use href="/cheshire-cats/assets/icons-a5e335b5.svg#icon-angle"></use>
       </svg>
@@ -286,6 +293,8 @@
       </ol>
       <div class="about-us-container-image">
         <img
+          width="255"
+          height="173"
           data-toggle-in-view="rotateShow"
           data-replace-to="is-visible"
           data-replace-in="2100"
@@ -587,7 +596,12 @@
           </div>
         </fieldset>
 
-        <button class="btn btn-main laa-form-submit" type="submit" id="submitButton">
+        <button
+          class="btn btn-main laa-form-submit"
+          name="Button for sending an application"
+          type="submit"
+          id="submitButton"
+        >
           Send
         </button>
 
@@ -711,7 +725,7 @@
     <div class="footer-container container">
       <div class="footer-content-wrap">
         <div class="footer-logo-adress-wrap">
-          <a class="footer-logo link" href="">
+          <a class="footer-logo link" href="@">
             english<span class="footer-logo-excellense">excellence.</span>
           </a>
           <!-- CONTACTS -->
@@ -788,10 +802,12 @@
           </p>
           <ul class="footer-policy footer-text-wrap">
             <li class="footer-policy-item">
-              <a href="" class="footer-text" data-modal-open>Privacy Policy</a>
+              <a href="#" class="footer-text" data-modal-open>Privacy Policy</a>
             </li>
             <li class="footer-policy-item">
-              <a href="" class="footer-text" data-modal-open>Terms of Service</a>
+              <a href="#" class="footer-text" data-modal-open
+                >Terms of Service</a
+              >
             </li>
           </ul>
         </div>
@@ -801,36 +817,43 @@
 </footer>
   <div class="modal-backdrop modal-is-hidden" data-modal>
   <div class="modal">
-    <button class="close-btn" data-modal-close type="button">
+    <button
+      name="Button to close the navigation menu"
+      class="close-btn"
+      data-modal-close
+      type="button"
+    >
       <svg class="menu-close-icon" width="8" height="8">
         <use href="/cheshire-cats/assets/icons-a5e335b5.svg#icon-close"></use>
       </svg>
     </button>
     <p class="modal-title">Privacy Policy</p>
     <p class="privacy-text">
-      Your privacy is important to us. This section outlines how we collect, use, process, and protect your personal
-      data. This Privacy Policy applies to the use of our website, applications, and services, so please take a moment
-      to read it.
-      What personal data do we collect:
-      We may collect various types of personal data that you voluntarily provide when interacting with our website,
-      registering an account, placing an order, or filling out forms. This may include your name, email address, phone
-      number, address, order information, and more.
-      How we use your personal data:
-      We use the collected personal data to provide services, manage your account, process orders, provide you with
-      information about our products and services, and to communicate with you regarding inquiries and updates.
-      Protection of personal data:
-      We take every effort to protect your information and use modern technologies to prevent unauthorized access, loss,
-      or disclosure of your personal information.
-      Disclosure to third parties:
-      We do not disclose your personal data to third parties without your consent, except when required by law or to
-      provide the services you requested.
-      Changes to the Privacy Policy:
-      We may periodically update this Privacy Policy. Please refer to this page to stay informed about any changes.
-      Contact us:
-      If you have any questions or concerns regarding this Privacy Policy or your information, please contact us using
-      the contact details provided on our website.</p>
+      Your privacy is important to us. This section outlines how we collect,
+      use, process, and protect your personal data. This Privacy Policy applies
+      to the use of our website, applications, and services, so please take a
+      moment to read it. What personal data do we collect: We may collect
+      various types of personal data that you voluntarily provide when
+      interacting with our website, registering an account, placing an order, or
+      filling out forms. This may include your name, email address, phone
+      number, address, order information, and more. How we use your personal
+      data: We use the collected personal data to provide services, manage your
+      account, process orders, provide you with information about our products
+      and services, and to communicate with you regarding inquiries and updates.
+      Protection of personal data: We take every effort to protect your
+      information and use modern technologies to prevent unauthorized access,
+      loss, or disclosure of your personal information. Disclosure to third
+      parties: We do not disclose your personal data to third parties without
+      your consent, except when required by law or to provide the services you
+      requested. Changes to the Privacy Policy: We may periodically update this
+      Privacy Policy. Please refer to this page to stay informed about any
+      changes. Contact us: If you have any questions or concerns regarding this
+      Privacy Policy or your information, please contact us using the contact
+      details provided on our website.
+    </p>
   </div>
 </div>
+
   <div class="go-top">
   <svg class="go-top-icon">
     <use href="/cheshire-cats/assets/icons-a5e335b5.svg#icon-go-top"></use>
