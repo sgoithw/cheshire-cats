@@ -9,15 +9,9 @@
     </p>
     <div class="laa-main-cont">
       <div class="laa-hidden-container">
-        <img
-          class="laa-thumb-pic"
-          srcset="./images/thumb-image.png 1x, ./images/thumb-image@2.png 2x"
-          src="./images/thumb-image.png"
-          alt="Girl in headphones learning English"
-          width="597"
-          height="537"
-          loading="lazy"
-        />
+        <img class="laa-thumb-pic" srcset="./images/thumb-image.png 1x, ./images/thumb-image@2.png 2x"
+          src="./images/thumb-image.png" alt="Girl in headphones learning English" width="597" height="537"
+          loading="lazy" />
         <p class="laa-main-part-title">1000</p>
         <p class="laa-main-part-prgf">
           of our online English language lessons! This journey has been full of
@@ -28,100 +22,44 @@
       <form class="laa-name-form">
         <div class="laa-inputs-container">
           <label class="laa-label-form-name" for="user-name">
-            <input
-              class="laa-input"
-              id="user-name"
-              type="text"
-              name="user-name"
-              required
-              minlength="3"
-              placeholder="Name"
-            />
+            <input class="laa-input" id="user-name" type="text" name="user-name" required minlength="3"
+              placeholder="Name" />
           </label>
           <label class="laa-label-form-name" for="user-email">
-            <input
-              class="laa-input"
-              type="email"
-              name="user-email"
-              id="user-email"
-              required
-              placeholder="Email"
-            />
+            <input class="laa-input" type="email" name="user-email" id="user-email" required placeholder="Email" />
           </label>
           <label class="laa-label-form-name" for="user-phone">
-            <input
-              class="laa-input"
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              required
-              placeholder="Phone"
-              minlength="12"
-              maxlength="12"
-            />
+            <input class="laa-input" type="tel" name="user-phone" id="user-phone" required placeholder="Phone"
+              minlength="12" maxlength="12" />
           </label>
           <label class="laa-label-form-name" for="user-comment">
-            <textarea
-              class="laa-input laa-user-comment"
-              name="user-comment"
-              id="user-comment"
-              rows="4"
-              placeholder="Comment"
-              required
-              minlength="7"
-            ></textarea>
+            <textarea class="laa-input laa-user-comment" name="user-comment" id="user-comment" rows="4"
+              placeholder="Comment" required minlength="7"></textarea>
           </label>
         </div>
         <fieldset class="leave-radio-group">
           <legend class="leave-radio-group-title">Choose a teacher</legend>
           <div class="leave-radio">
-            <input
-              class="leave-radio-input"
-              type="radio"
-              name="teacher"
-              value="maria"
-              id="radio-Maria"
-              checked
-            />
+            <input class="leave-radio-input" type="radio" name="teacher" value="maria" id="radio-Maria" checked />
             <label class="leave-radio-label" for="radio-Maria">Maria</label>
           </div>
           <div class="leave-radio">
-            <input
-              class="leave-radio-input"
-              type="radio"
-              name="teacher"
-              value="artem"
-              id="radio-Artem"
-            />
+            <input class="leave-radio-input" type="radio" name="teacher" value="artem" id="radio-Artem" />
             <label class="leave-radio-label" for="radio-Artem">Artem</label>
           </div>
           <div class="leave-radio">
-            <input
-              class="leave-radio-input"
-              type="radio"
-              name="teacher"
-              value="ilona"
-              id="radio-ilona"
-            />
+            <input class="leave-radio-input" type="radio" name="teacher" value="ilona" id="radio-ilona" />
             <label class="leave-radio-label" for="radio-ilona">Ilona</label>
           </div>
           <div class="leave-radio">
-            <input
-              class="leave-radio-input"
-              type="radio"
-              name="teacher"
-              value="volodymyr"
-              id="radio-volodymyr"
-            />
-            <label class="leave-radio-label" for="radio-volodymyr"
-              >Volodymyr</label
-            >
+            <input class="leave-radio-input" type="radio" name="teacher" value="volodymyr" id="radio-volodymyr" />
+            <label class="leave-radio-label" for="radio-volodymyr">Volodymyr</label>
           </div>
         </fieldset>
 
         <button
-          name="Button for sending an application"
           class="btn btn-main laa-form-submit"
+          name="Button for sending an application"
           type="submit"
           id="submitButton"
         >
@@ -130,7 +68,7 @@
 
         <p class="tx-laa">
           By clicking on “Send” button, you agree to our
-          <span class="tx-laa-accent">Privacy Policy</span>, and allow Promodo
+          <a href="" class="tx-laa-accent" data-modal-open>Privacy Policy</a>, and allow Promodo
           to use this information for marketing purposes.
         </p>
       </form>
